@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #000000;
+}
+
+header {
+    background: #005c0c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns everything to the left */
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 15px; /* Space between logo and title */
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px; /* Adds space between logo and title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* News Ticker */
+.news-ticker {
+    background: #ffcc00;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200%;
+    height: 30px;
+    position: relative;
+}
+
+#news-text {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Campaign Section */
+.campaign-list {
+    padding: 20px;
+    text-align: center;
+}
+
+.campaign {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.campaign img {
+    width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #b22222;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #8b0000;
+}
+
+/* Donation Calculator */
+.donation {
+    text-align: center;
+    padding: 20px;
+}
+
+#donation-label {
+    color: white; /* Change to your preferred color */
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background: #b22222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8b0000;
+}
+
+#impactResult {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+/* Video Embed */
+.video-section {
+    text-align: center;
+    padding: 20px;
+}
+
+iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.countdown {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #f50b16;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    }
+
+    .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    }
+
+    .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    }
+
+    .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+    }
+
+    .footer-section ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .footer-section ul li {
+    margin: 5px 0;
+    }
+
+    .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+    text-decoration: underline;
+    }
+
+    .social-icons img {
+    width: 30px;
+    margin: 5px;
+    }
+
+    .footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #002244;
+    }
